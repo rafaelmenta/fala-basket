@@ -1,3 +1,13 @@
-<p>
-  archive works!
-</p>
+<ng-container *ngIf="data$ | async as episodes">
+  <div class="row hack"></div>
+  <div class="row">
+    <div class="content">
+      <h2 class="section-title">Arquivo</h2>
+      <ul class="episodes">
+        <li *ngFor="let episode of episodes">
+          <a [routerLink]="['/episodio', episode.slug]">#{{episode.episodeNumber}} - {{episode.title}} [{{episode.duration}} mins]</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</ng-container>

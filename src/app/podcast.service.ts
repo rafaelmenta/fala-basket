@@ -18,6 +18,10 @@ export class PodcastService {
     return this.http.get<HomeData>(this.BASE_URL);
   }
 
+  getEpisodes() {
+    return this.http.get<Episode[]>(`${this.BASE_URL}/episodes`);
+  }
+
   getEpisode(slug: string) {
     return this.http.get<Episode>(`${this.BASE_URL}/episode/${slug}`);
   }
