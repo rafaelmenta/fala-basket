@@ -4,10 +4,7 @@
   <span class="episode-subtitle">publicado em {{episode.publishDate | date}}</span>
   <span class="episode-description">{{episode.description}}</span>
   <span class="episode-playback">
-    <audio controls src="{{episode.audio}}">
-      Your browser does not support the
-      <code>audio</code> element.
-    </audio>
+    <app-player [id]="episode.slug" [src]="episode.audio"></app-player>
   </span>
 </div>
 <div class="episode-highlight">

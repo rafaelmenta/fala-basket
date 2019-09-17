@@ -23,6 +23,7 @@ import { HostsComponent } from './hosts/hosts.component';
 import { EpisodeComponent } from './episode/episode.component';
 import { EpisodeInfoComponent } from './episode-info/episode-info.component';
 import { ArchiveComponent } from './archive/archive.component';
+import { PlayerComponent } from './player/player.component';
 
 registerLocaleData(localePt);
 
@@ -40,6 +41,7 @@ registerLocaleData(localePt);
     EpisodeComponent,
     EpisodeInfoComponent,
     ArchiveComponent,
+    PlayerComponent,
   ],
   imports: [
     BrowserModule,

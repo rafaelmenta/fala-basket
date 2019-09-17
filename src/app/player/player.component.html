@@ -1,0 +1,11 @@
+<audio
+  #audioPlayer
+  class="audio-player"
+  (ended)="logEvent('ended')"
+  (play)="logEvent('play')"
+  (pause)="logEvent('pause')"
+  (seeked)="logEvent('seeked')"
+  controls src="{{src}}">
+  Your browser does not support the
+  <code>audio</code> element.
+</audio>
