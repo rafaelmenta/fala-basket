@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { EpisodeComponent } from './episode/episode.component';
+import { ArchiveComponent } from './archive/archive.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'episodio/:id',
     component: EpisodeComponent,
+  }
+  {
+    path: 'arquivo',
+    component: ArchiveComponent,
   }
   // {
   //   path: '**',

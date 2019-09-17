@@ -22,6 +22,7 @@ import { EpisodesComponent } from './episodes/episodes.component';
 import { HostsComponent } from './hosts/hosts.component';
 import { EpisodeComponent } from './episode/episode.component';
 import { EpisodeInfoComponent } from './episode-info/episode-info.component';
+import { ArchiveComponent } from './archive/archive.component';
 
 registerLocaleData(localePt);
 
@@ -38,6 +39,7 @@ registerLocaleData(localePt);
     HostsComponent,
     EpisodeComponent,
     EpisodeInfoComponent,
+    ArchiveComponent,
   ],
   imports: [
     BrowserModule,
