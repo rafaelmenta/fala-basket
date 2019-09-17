@@ -1,0 +1,20 @@
+.menu {
+  font-size: 1.5em;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  margin: 0.5em;
+  justify-content: center;
+}
+
+.menu li {
+}
+
+.menu li:not(:first-of-type)::before {
+  margin: auto 0.5em;
+  content: '•';
+}
+
+.menu-content {
+  margin-bottom: 0;
+}

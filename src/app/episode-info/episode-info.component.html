@@ -1,0 +1,15 @@
+<div class="episode-info">
+  <span class="episode-title">#{{episode.episodeNumber}} - {{episode.title}} [{{episode.duration}} mins]</span>
+  <!-- <span class="episode-title">#7 - Piloto (com Ricardo Stabolito) [39 mins]</span> -->
+  <span class="episode-subtitle">publicado em {{episode.publishDate | date}}</span>
+  <span class="episode-description">{{episode.description}}</span>
+  <span class="episode-playback">
+    <audio controls src="{{episode.audio}}">
+      Your browser does not support the
+      <code>audio</code> element.
+    </audio>
+  </span>
+</div>
+<div class="episode-highlight">
+  <img src="{{episode.highlight}}" class="responsive" alt="{{episode.title}}">
+</div>

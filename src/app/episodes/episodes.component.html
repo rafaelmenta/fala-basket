@@ -1,0 +1,10 @@
+<div class="content left">
+  <h2 class="section-title">Episódios recentes</h2>
+  <img src="https://static.draftbrasil.net/fala-basket/microphone.png" class="microphone" alt="microfone">
+  <ul class="episodes">
+    <li *ngFor="let episode of episodes">
+      <a [routerLink]="['/episodio', episode.slug]">#{{episode.episodeNumber}} - {{episode.title}} [{{episode.duration}} mins]</a>
+    </li>
+    <li class="archieve">[<a [routerLink]="['/arquivo']">ver arquivo</a>]</li>
+  </ul>
+</div>

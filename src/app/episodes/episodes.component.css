@@ -1,0 +1,41 @@
+.microphone {
+  height: 250px;
+  margin-right: 2em;
+}
+
+.episodes {
+  list-style: none;
+}
+
+.episodes li {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.episodes li.archieve {
+  margin-top: 1em;
+  text-align: right;
+  font-size: 1em;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .microphone {
+    height: 200px;
+    margin-right: 0;
+  }
+
+  .episodes {
+    padding: 1em;
+  }
+
+  .episodes li {
+    margin-top: 0.5em;
+    font-size: 1em;
+  }
+}

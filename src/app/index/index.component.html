@@ -1,0 +1,6 @@
+<ng-container *ngIf="data$ | async as data">
+  <div class="row hack"></div>
+  <app-recent class="row" [episode]="data.latest"></app-recent>
+  <app-episodes class="row" [episodes]="data.episodes"></app-episodes>
+  <app-hosts class="row"></app-hosts>
+</ng-container>

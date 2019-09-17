@@ -1,0 +1,146 @@
+/* begin reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset */
+
+/* hacks */
+
+/* needs this to fool the even/odd css styling */
+.hack {
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+}
+
+/* grid */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .row {
+  margin-bottom: 2em;
+}
+
+.container .row.condensed {
+  margin-bottom: 0;
+}
+
+.row {
+  display: block;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.container .row:nth-child(2n + 1) {
+  background: #b76829;
+}
+
+.container .row:nth-child(2n) {
+  background: #873800;
+}
+
+/* app */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background: #b76829;
+  color: #f6e7b8;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.responsive {
+  width: 100%;
+}
+
+.left {
+  justify-content: flex-start !important;
+}
+
+a {
+  text-decoration: none;
+  color: #D69F7E;
+}
+
+a:hover {
+  color: #f6e7b8;
+}
+
+.content {
+  max-width: 1260px;
+  margin: auto;
+  margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-title {
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
