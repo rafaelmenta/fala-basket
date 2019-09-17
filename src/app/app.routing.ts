@@ -12,11 +12,11 @@ const routes: Routes = [
   {
     path: 'episodio/:id',
     component: EpisodeComponent,
-  }
+  },
   {
     path: 'arquivo',
     component: ArchiveComponent,
-  }
+  },
   // {
   //   path: '**',
   //   component: NotFoundComponent,
