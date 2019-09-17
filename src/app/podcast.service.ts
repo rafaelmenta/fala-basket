@@ -36,6 +36,7 @@ export interface Episode {
   highlight: string;
   permalink: string;
   audio: string;
+  slug: string;
 }
 
 export interface HomeData {
